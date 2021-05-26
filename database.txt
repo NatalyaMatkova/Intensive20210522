@@ -1,7 +1,13 @@
-user
+user - пользователи
 
-- id INT NUL AUTO_INCREMENT
+- id INT NOT NULL AUTO_INCREMENT
 - session_id VARCHAR(255) NOT NULL
 - reg_time DATETIME NOT NULL
 - name VARCHAR(255) NOT NULL
 
+message - сообщения
+
+- id INT NOT NULL AUTO_INCREMENT
+- user_id INT NOT NULL
+- time DATETIME NOT NULL
+- message TEXT NOT NULL
